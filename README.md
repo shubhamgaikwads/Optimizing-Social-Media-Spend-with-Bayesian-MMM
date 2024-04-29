@@ -1,53 +1,55 @@
-# Marketing-Mix-Modeling-using-PyMC-Bayesian-MMM
-This repository demonstrates the use of PyMC-Marketing Bayesian Mix Marketing Model to analyze the impact of the media spend on revenue.
+# Social Media Marketing Mix Model with Bayesian PyMC
+This repository demonstrates the use of a Bayesian Marketing Mix Model (MMM) with PyMC to optimize marketing spend across social media platforms.
 
-# Introduction:
+# Introduction
 
-This repository contains code for building a Marketing Mix Model (MMM) using the PyMC Bayesian approach. MMM is a statistical analysis technique that helps marketers understand the impact of various marketing tactics on sales and revenue. In this project, we use Bayesian methods implemented with PyMC to estimate the effects of TV and search advertising spending on revenue.
+This project aims to help marketers understand the impact of social media marketing spend on key business metrics such as sales or revenue. Using Bayesian methods implemented with PyMC, we estimate the effects of spending across various social media channels (Instagram, Facebook, Twitter, and TikTok) and offer insights into optimal budget allocation. Additionally, we provide functions to calculate optimal marketing spend based on various factors like content type and target audience.
 
-# Installation:
+# Installation
 
-You can install the necessary package using pip:
-
-bash
-Copy code
-pip install pymc-marketing
-
-# Dependencies:
-
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-arviz
-pymc
-
-# Result:
+To run this code, you need Python and the following packages:
 
 
-The summary statistics provide information about the posterior distributions of the model parameters. Here's how to interpret the results and understand the impact on revenue:
+# Install required packages
+pip install pymc arviz pandas numpy matplotlib
 
-alpha: The mean value of alpha is 3.736 with a standard deviation of 0.984. This represents the intercept term in the model. It indicates the baseline revenue when both TV spend and search spend are zero.
 
-beta_search: The mean value of beta_search is 182.964 with a very small standard deviation of 0.005. This indicates that for every unit increase in search spend, there is an average increase of approximately $182.96 in revenue.
+# Dependencies
 
-beta_tv: The mean value of beta_tv is 12.600 with a very small standard deviation of 0.002. This indicates that for every unit increase in TV spend, there is an average increase of approximately $12.60 in revenue.
+pandas: Data manipulation
+numpy: Numerical operations
+matplotlib: Data visualization
+arviz: Analysis and visualization for Bayesian data
+pymc: Bayesian probabilistic programming
 
-sigma: The mean value of sigma is 20208.776, which represents the standard deviation of the error term in the model. This indicates the variability of the observed revenue around the predicted values by the model.
+# Usage
 
-# Summary:
+To use the Bayesian model to optimize marketing spend, follow these steps:
 
-The PyMC Bayesian MMM model estimates the effects of TV and search advertising spending on revenue. The summary statistics provide information about the posterior distributions of the model parameters. Based on the analysis, increasing search spend by one unit is estimated to have a much larger impact on revenue compared to increasing TV spend by one unit.
+Build the Bayesian Model: Create a Bayesian model with PyMC to estimate the impact of marketing spend across various social media platforms. This step involves setting up the model, sampling from the posterior distributions, and deriving the necessary coefficients.
+Calculate Optimal Spend: With the Bayesian model, calculate optimal marketing spend based on given inputs such as budget, content type, and target audience.
+Example code snippets and detailed explanations are provided in the repository, showing how to build the model, sample from it, and calculate the optimal spend.
 
-# Contributing:
+# Results
 
-Contributions to this project are welcome. Feel free to open an issue or submit a pull request.
+The results from the Bayesian Marketing Mix Model provide insights into the impact of different marketing channels on business outcomes. By calculating the posterior distributions of model parameters, we can understand how various factors influence revenue or sales.
 
-# Sources:
+Posterior Coefficients: The summary statistics from the Bayesian model indicate the estimated impact of each social media channel on revenue.
+Optimal Spend: The calculated optimal spend provides suggestions for how to allocate a given marketing budget based on the derived coefficients and various adjustments for content type and target audience.
 
-Data Source: https://github.com/deejayrusso/Marketing-Mix-Model/blob/main/README.md
+# Summary
 
-Model: https://github.com/pymc-labs/pymc-marketing
+The Bayesian Marketing Mix Model built with PyMC allows marketers to analyze and optimize social media marketing spend. The model's coefficients and resulting optimal spend calculations offer valuable insights into how different channels impact key business metrics. By incorporating adjustments for content type and target audience, this project helps businesses make data-driven decisions about marketing budget allocation.
+
+# Contributing
+
+Contributions to this project are welcome. If you'd like to contribute, feel free to open an issue or submit a pull request with your suggestions or improvements.
+
+# References and Sources
+
+For more information on Marketing Mix Models and Bayesian statistics, you can explore the following resources:
+
+PyMC: https://www.pymc.io/
+ArviZ: https://arviz-devs.github.io/arviz/
 
 
