@@ -5,10 +5,6 @@ This repository demonstrates the use of a Bayesian Marketing Mix Model (MMM) wit
 
 This project aims to help marketers understand the impact of social media marketing spend on key business metrics such as sales or revenue. Using Bayesian methods implemented with PyMC, we estimate the effects of spending across various social media channels (Instagram, Facebook, Twitter, and TikTok) and offer insights into optimal budget allocation. Additionally, we provide functions to calculate optimal marketing spend based on various factors like content type and target audience.
 
-# Installation
-
-To run this code, you need Python and the following packages:
-
 
 # Install required packages
 pip install pymc arviz pandas numpy matplotlib
